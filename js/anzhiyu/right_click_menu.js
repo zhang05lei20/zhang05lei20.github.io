@@ -359,11 +359,11 @@ function replaceAll(string, search, replace) {
   return string.split(search).join(replace);
 }
 
-// 调用Bing搜索
+// 百度搜索
 rm.searchBaidu = function () {
-  anzhiyu.snackbarShow("即将跳转到Bing搜索结果", false, 2000);
+  anzhiyu.snackbarShow("即将跳转到百度搜索", false, 2000);
   setTimeout(function () {
-    window.open("https://bing.com/search?q=" + selectTextNow);
+    window.open("https://www.baidu.com/s?wd=" + selectTextNow);
   }, "2000");
   rm.hideRightMenu();
 };
